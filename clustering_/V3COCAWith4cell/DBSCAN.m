@@ -31,11 +31,6 @@
 % Natural Patterns in Data. Part 1: Density Based Approach, 
 % Chemom. Intell. Lab. Syst. 56 (2001) 83-92 
 % -------------------------------------------------------------------------
-% Written by Michal Daszykowski
-% Department of Chemometrics, Institute of Chemistry, 
-% The University of Silesia
-% December 2004
-% http://www.chemometria.us.edu.pl
 
 function [class,type]=DBSCAN(x,k,Eps)
 
