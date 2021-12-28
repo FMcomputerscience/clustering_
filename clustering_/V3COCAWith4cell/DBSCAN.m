@@ -4,33 +4,6 @@
 % Aim: 
 % Clustering the data with Density-Based Scan Algorithm with Noise (DBSCAN)
 % -------------------------------------------------------------------------
-% Input: 
-% x - data set (m,n); m-objects, n-variables
-% k - number of objects in a neighborhood of an object 
-% (minimal number of objects considered as a cluster)
-% Eps - neighborhood radius, if not known avoid this parameter or put []
-% -------------------------------------------------------------------------
-% Output: 
-% class - vector specifying assignment of the i-th object to certain 
-% cluster (m,1)
-% type - vector specifying type of the i-th object 
-% (core: 1, border: 0, outlier: -1)
-% -------------------------------------------------------------------------
-% Example of use:
-% x=[randn(30,2)*.4;randn(40,2)*.5+ones(40,1)*[4 4]];
-% [class,type]=dbscan(x,5,[])
-% clusteringfigs('Dbscan',x,[1 2],class,type)
-% -------------------------------------------------------------------------
-% References:
-% [1] M. Ester, H. Kriegel, J. Sander, X. Xu, A density-based algorithm for 
-% discovering clusters in large spatial databases with noise, proc. 
-% 2nd Int. Conf. on Knowledge Discovery and Data Mining, Portland, OR, 1996, 
-% p. 226, available from: 
-% www.dbs.informatik.uni-muenchen.de/cgi-bin/papers?query=--CO
-% [2] M. Daszykowski, B. Walczak, D. L. Massart, Looking for 
-% Natural Patterns in Data. Part 1: Density Based Approach, 
-% Chemom. Intell. Lab. Syst. 56 (2001) 83-92 
-% -------------------------------------------------------------------------
 
 function [class,type]=DBSCAN(x,k,Eps)
 
