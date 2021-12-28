@@ -4,6 +4,18 @@
 % Aim: 
 % Clustering the data with Density-Based Scan Algorithm with Noise (DBSCAN)
 % -------------------------------------------------------------------------
+% Input: 
+% x - data set (m,n); m-objects, n-variables
+% k - number of objects in a neighborhood of an object 
+% (minimal number of objects considered as a cluster)
+% Eps - neighborhood radius, if not known avoid this parameter or put []
+% -------------------------------------------------------------------------
+% Output: 
+% class - vector specifying assignment of the i-th object to certain 
+% cluster (m,1)
+% type - vector specifying type of the i-th object 
+% (core: 1, border: 0, outlier: -1)
+% -------------------------------------------------------------------------
 
 function [class,type]=DBSCAN(x,k,Eps)
 
